@@ -1,0 +1,44 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class Main {
+    
+    public static void printrevpyramid(int n){
+        for(int row=1;row<=n;row++){
+        for(int col =1;col<=n+1-row;col++){
+            
+                System.out.print("*");
+            
+        }
+        System.out.println();
+    }
+    }
+    
+    
+    public static void printnumberrevpyramid(int n){
+        
+        for(int row=1;row<=n;row++){
+            int count=1;
+        for(int col =1;col<=n+1-row;col++){
+            
+                System.out.print(count++);
+            
+        }
+        System.out.println();
+    }
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter n:");
+        int n=sc.nextInt();
+        printrevpyramid(n);
+        System.out.println();
+        printnumberrevpyramid(n);
+        
+        
+        
+    }
+}
