@@ -1,0 +1,56 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class Main {
+    
+    public static void printpatterntriangle(int n){
+        for(int row=1;row<=n;row++){
+        for(int col =1;col<=row;col++){
+            
+                System.out.print("*");
+            
+        }
+        System.out.println();
+    }
+    }
+    
+    public static void printnumbertriangle(int n){
+        for(int row=1;row<=n;row++){
+            int count=1;
+        for(int col =1;col<=row;col++){
+            
+                System.out.print(count++);
+            
+        }
+        System.out.println();
+    }
+    }
+    
+    public static void printtriangle(int n){
+        int count=1;
+        for(int row=1;row<=n;row++){
+        for(int col =1;col<=row;col++){
+            
+                System.out.print(count++);
+            
+        }
+        System.out.println();
+    }
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter n:");
+        int n=sc.nextInt();
+        printpatterntriangle(n);
+        System.out.println();
+        printnumbertriangle(n);
+        System.out.println();
+        printtriangle(n);
+        
+        
+        
+    }
+}
